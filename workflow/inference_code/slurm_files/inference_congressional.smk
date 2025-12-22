@@ -16,7 +16,7 @@ model_directory = "/scratch/sj4461/final_rhetoric_detection_model/"
 output_file = "/scratch/sj4461/congressional_inference/inferred_congressional_record_{year}.parquet"
 
 file_directory = os.path.join("/","scratch","sj4461","news_persuasion",\
-    "workflow")
+    "workflow", "inference_code")
 
 inference_file = os.path.join(file_directory, "inference_congressional.py")
 
