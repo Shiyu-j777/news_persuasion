@@ -26,7 +26,7 @@ if __name__ == "__main__":
         print(model_type)
         current_strategy_model = model_directory + "_".join([model_type, "model"])
         tokenizer = AutoTokenizer.from_pretrained(model_name, padding='max_length', truncation=True, max_length=512, force_download= True)
-        persuasion_classification_model =  AutoModelForSequenceClassification.from_pretrained(model_directory)
+        persuasion_classification_model =  AutoModelForSequenceClassification.from_pretrained(current_strategy_model)
         prediction_pipeline = TextClassificationPipeline(model = persuasion_classification_model, \
                                                          tokenizer = tokenizer,torch_dtype='float16', device = "cuda")
         
