@@ -21,7 +21,7 @@ file_directory = os.path.join("/","scratch","sj4461","news_persuasion",\
 inference_file = os.path.join(file_directory, "inference_congressional.py")
 
 
-year_list = np.arange(1981,1983)
+year_list = np.arange(1981,2017)
 
 ###################################################
 # Snakemake rules
