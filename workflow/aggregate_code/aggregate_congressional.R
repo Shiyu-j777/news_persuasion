@@ -147,4 +147,4 @@ for (year in 1981:2016){
     
 }
 
-arrow::write_parquet(output_file)
+arrow::write_parquet(output_data, sink = output_file)
