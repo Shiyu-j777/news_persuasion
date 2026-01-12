@@ -29,7 +29,7 @@ filter_count_list = [10, 20, 30, 50]
 
 rule all:
     input:
-        expand(output_file, filter_count = filter_count)
+        expand(output_file, filter_count = filter_count_list)
 
 
 rule clean_comment:
