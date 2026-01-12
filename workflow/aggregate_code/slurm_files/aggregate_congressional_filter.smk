@@ -36,7 +36,7 @@ rule clean_comment:
     params:
         input_directory,
         header,
-        "{count}"
+        "{filter_count}"
     output:
         output_file
     script:
