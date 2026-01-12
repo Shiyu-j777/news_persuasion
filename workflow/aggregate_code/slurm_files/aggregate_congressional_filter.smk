@@ -18,7 +18,7 @@ output_file = "/scratch/sj4461/congressional_inference/aggregate_inferred_congre
 file_directory = os.path.join("/","scratch","sj4461","news_persuasion",\
     "workflow", "aggregate_code")
 
-inference_file = os.path.join(file_directory, "aggregate_congressional.R")
+inference_file = os.path.join(file_directory, "aggregate_congressional_word_filter.R")
 
 filter_count_list = [10, 20, 30, 50]
 
